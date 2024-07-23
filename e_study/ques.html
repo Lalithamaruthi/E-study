@@ -1,0 +1,110 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="ques.css"></link>
+    <link rel="stylesheet"
+    href="nav.css">
+  </head>
+  <body>
+    <div class="boooox">
+    <nav>
+      <img src="logo.png"  >
+      <div class="navigation">
+        <ul>
+          <li><a href="afterhome.html">Home</a></li>
+          
+          <li><a href="./afterabout.html">About</a></li>
+          <li><a href="./explore.html">Explore</a></li> 
+          <li><a href="./dashq.html">Subjects</a></li> 
+          
+        </ul>
+      </div>
+    </nav>
+  <h1 style="text-align: center;">Java</h1>
+  <div class="slideshow-container">
+  
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="p1.jpg" style="width:100%">
+        <div class="text">Page Number</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="p2.jpg" style="width:100%">
+        <div class="text">Page Number</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="p3.jpg" style="width:100%">
+        <div class="text">Page Number</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="p1.jpg" style="width:100%">
+        <div class="text">Page Number</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="p2.jpg" style="width:100%">
+        <div class="text">Page Number</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="p3.jpg" style="width:100%">
+        <div class="text">Page Number</div>
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <script>
+      let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+    </script>
+    <a href="dashq.html"><button class="btn1">back</button></a>
+    </div>
+  </body>
+  </html>

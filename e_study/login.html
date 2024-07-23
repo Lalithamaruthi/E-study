@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login Panel</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <nav>
+    <img src="logo.png"  >
+    <div class="navigation">
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <!-- <li><a href="C:\\Users\\ajaya\\OneDrive\\Desktop\\stydyweb\\e_study\\about.html">About</a></li> -->
+        <li><a href="./about1.html">About</a></li>
+        <li><a href="./login.html">login</a></li> 
+        
+      </ul>
+    </div> 
+  </nav>
+  <div class="container">
+    <div class="myform">
+    
+        <h2>LOGIN</h2>
+        <!-- <input type="email" placeholder="email" id="email">
+        <input type="password" placeholder="password" id="password">
+        <button type="submit"onclick="signIn() ">LOGIN</button>
+      -->
+      <script src="https://www.gstatic.com/firebasejs/9.17.0/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.17.0/firebase-firestore-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.17.0/firebase-auth-compat.js"></script>
+      </head>
+      <body>
+          <div class="form">
+                          
+              <div class="email">
+      <label for="email">Email</label>
+      <input type="email" required="" name="email" id="email" placeholder="Write your email">
+              </div>
+      <div class="pass">
+          <label for="password">password</label>
+          <input type="password" required="" id="password" placeholder="password">
+      </div>
+      
+      <button id="submit-btn" onclick="signUp()">sign up</button>
+      <button id="submit-btn" onclick="signIn()">sign in</button>
+          </div>
+      
+      
+          <script src="login.js"></script>
+    </div>
+    <div class="image">
+      <img src="av.jpg">
+    </div>
+  </div>
+
+
+
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+      </script>
+       
+      <script>
+          const firebaseConfig = {
+              apiKey: "AIzaSyCpmYG00SD6A-v3eSxvQ4RLSCYwkUNM2GA",
+    authDomain: "webdev-46c60.firebaseapp.com",
+    projectId: "webdev-46c60",
+    storageBucket: "webdev-46c60.appspot.com",
+    messagingSenderId: "414159662770",
+    appId: "1:414159662770:web:4231ef9526df42a97ca3ab",
+    measurementId: "G-GB8J08YNKT"
+          };
+   
+          firebase.initializeApp(firebaseConfig);
+   
+         
+      </script> -->
+      <!-- <script src="./home.html"></script> -->
+    
+</body>
+</html>

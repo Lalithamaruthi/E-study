@@ -1,0 +1,98 @@
+/* navigation */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   padding: 1vw 8vw;   
+  box-shadow: 2px 2px 10px rgba(0,0,0, 0.15);
+  }
+  nav img{
+      width: 150px;
+      cursor: pointer;
+      /* width:"10vh";
+       height:"10vh"; */
+  }
+  nav .navigation ul{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+  nav .navigation ul li {
+      list-style: none;
+      margin-left: 30px;
+  }
+  nav .navigation ul li a{
+      text-decoration: none;
+      color: blue;
+      font-size: 16px;
+      font-weight: 500;
+  
+  }
+  nav .navigation ul li a:hover{
+  color: rgb(21, 21, 21);
+  
+  }
+  #home {
+      /* background-image:  url("background.webp") linear-gradient(rgba(41, 29, 172, 0.3),rgba(yellow)); */
+       width:90%;
+       height:100vh;
+       background-size: cover;
+       background-position: center;
+       display: flex;
+       flex-direction:column ;
+       justify-content:center;
+       /* align-items: center; */
+       /* text-align: center; */
+       text-align: left;
+       /* float: left; */
+       margin-left: 10%;
+      margin-top: 2%;
+      /* align-content: flex-start; */
+
+
+  }
+  body{
+    background-image:  url("https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L3JtNTI2LWJnLTAyYS5qcGc.jpg") ;
+
+  }
+  .img{
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+    margin-left: 79rem;
+    margin-top: 5rem;
+  }
+  .img1{
+    width: 500px;
+    
+    margin-left: 10%;
+    margin-top: 3%;
+    border-radius: 30px;
+  }
+  .content{
+    margin-left: 10rem;
+    /* display: flex; */
+    margin-bottom: 23rem;
+    
+  }
+  .title{
+    margin-left: 10%;
+  }
+  .button {
+    background-color: #e8c62e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .btn{
+    
+  }

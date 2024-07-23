@@ -1,0 +1,191 @@
+
+html {
+  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+ 
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ padding: 1vw 8vw;   
+box-shadow: 2px 2px 10px rgba(0,0,0, 0.15);
+}
+nav img{
+    width: 150px;
+    cursor: pointer;
+    /* width:"10vh";
+     height:"10vh"; */
+
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+nav .navigation ul li a:hover{
+color: rgb(13, 13, 13);
+
+}
+body {
+  background-color: #e2891c;
+}
+ 
+section.calendar {
+  background-color: #29323f;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+  width: 290px;
+  padding: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+section.calendar h1 {
+  text-align: center;
+  color: #ec921c;
+  margin: 0 0 30px 0;
+}
+section.calendar form {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  align-content: flex-start;
+}
+section.calendar form label.weekday {
+  display: inline-block;
+  width: 25px;
+  margin: 8px;
+  text-align: center;
+  color: #999;
+}
+section.calendar form form {
+  margin: 0;
+  padding: 0;
+}
+section.calendar form label.day {
+  display: inline-block;
+  width: 25px;
+  margin: 8px;
+}
+section.calendar form label.day span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  margin: -2px 0 0 -2px;
+  border-radius: 50%;
+  border: 2px solid #29323f;
+  text-align: center;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+section.calendar form label.day span:hover {
+  border-color: #e89b1e;
+}
+section.calendar form label.day em {
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border-color: #29323f;
+  width: 3px;
+  height: 3px;
+  background-color: #685e02;
+  margin-left: 11px;
+  margin-top: 2px;
+  opacity: 0;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+section.calendar form label.day input[type=text] {
+  border: 0;
+  opacity: 0;
+  position: absolute;
+  margin-top: 40px;
+  left: -45px;
+  width: 380px;
+  height: 1px;
+  padding: 0;
+  outline: none;
+  font-size: 16px;
+  -webkit-transition: height .2s linear, opacity .2s linear, color .02s linear;
+  transition: height .2s linear, opacity .2s linear, color .02s linear;
+  color: #fff;
+}
+section.calendar form label.day input[type=text]:focus {
+  opacity: 1;
+  height: 35px;
+  padding: 10px 40px;
+  left: -45px;
+  width: 300px;
+  color: #29323f;
+}
+section.calendar form label.day input[type=text]:focus + span {
+  color: #f2a815;
+  border-color: #e6a415;
+  background: #f0ad10;
+  color: #29323f;
+  font-weight: bold;
+  margin-bottom: 65px;
+}
+section.calendar form label.day input[type=text]:focus ~ em {
+  border-radius: 0;
+  border: 5px solid transparent;
+  background: transparent;
+  border-bottom-color: white;
+  margin-top: -62px;
+  margin-left: 7px;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  opacity: 1;
+}
+section.calendar form label.day input[type=text]:valid ~ em {
+  display: inline-block;
+  opacity: 1;
+}
+section.calendar form label.day.invalid {
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+}
+section.calendar form label.day.invalid span, section.calendar form label.day.invalid input {
+  display: none;
+}
+section.calendar div.clearfix {
+  clear: both;
+}
+section.calendar div.hidden {
+  display: none;
+}
+ 
