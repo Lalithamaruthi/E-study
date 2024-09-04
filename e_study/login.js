@@ -49,6 +49,6 @@ const password = document.getElementById("password").value;
     console.log(error.code);
     console.log(error.message)
     alert("Wrong password")
-    window.location.replace("./home.html ");
+    window.location.replace("./index.html ");
   });
 }
